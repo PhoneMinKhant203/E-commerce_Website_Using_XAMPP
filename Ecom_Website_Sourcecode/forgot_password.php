@@ -28,8 +28,8 @@ if (isset($_POST['submit'])) {
             $mail->isSMTP();                              // Send using SMTP
             $mail->Host       = 'smtp.gmail.com';         // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                     // Enable SMTP authentication
-            $mail->Username   = 'phoneminkhant1030501@gmail.com';   // SMTP username
-            $mail->Password   = 'ccrs ehjm zvgz shul';    // SMTP password
+            $mail->Username   = 'your@gamil.com';   // SMTP username
+            $mail->Password   = 'app password';    // SMTP password
             $mail->SMTPSecure = 'tls';                    // Use 'tls' for encryption
             $mail->Port       = 587;                      // TLS port
 
@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
             );
 
             // Recipients
-            $mail->setFrom('phoneminkhant1030501@gmail.com', 'Alfred D. Bryson Luxury Watch Store');
+            $mail->setFrom('your@gamil.com', 'Alfred D. Bryson Luxury Watch Store');
             $mail->addAddress($email); // Send to the user's email
 
             // Content
