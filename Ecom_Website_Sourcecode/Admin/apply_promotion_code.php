@@ -60,8 +60,8 @@ if (isset($_POST['apply_promotion_btn'])) {
                         $mail->isSMTP();                              // Send using SMTP
                         $mail->Host       = 'smtp.gmail.com';       // Set the SMTP server to send through
                         $mail->SMTPAuth   = true;                     // Enable SMTP authentication
-                        $mail->Username   = 'phoneminkhant1030501@gmail.com'; // SMTP username
-                        $mail->Password   = 'fhez qlze xify zcyu';   // SMTP password
+                        $mail->Username   = 'your@gamil.com'; // SMTP username
+                        $mail->Password   = 'app Password';   // SMTP password
                         $mail->SMTPSecure = 'tls';                    // Use 'tls' for encryption
                         $mail->Port       = 587;                      // TLS port
 
@@ -75,9 +75,9 @@ if (isset($_POST['apply_promotion_btn'])) {
                         );
 
                         // Recipients
-                        $mail->setFrom('phoneminkhant1030501@gmail.com', 'Alfred D. Bryson Store'); // Sender Email and name
+                        $mail->setFrom('your@gamil.com', 'Alfred D. Bryson Store'); // Sender Email and name
                         $mail->addAddress($to_email); // Add a recipient email  
-                        $mail->addReplyTo('phoneminkhant1030501@gmail.com', 'Alfred D. Bryson Store'); // Reply to sender email
+                        $mail->addReplyTo('your@gamil.com', 'Alfred D. Bryson Store'); // Reply to sender email
 
                         // Content
                         $mail->isHTML(true); // Set email format to HTML
